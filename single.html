@@ -21,7 +21,7 @@
     <script src="assets/js/main.js" type="text/javascript"></script>
     <!-- FONTS !-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-<head>
+</head>
 <body>
     <!-- HEADER !-->
     <header>
@@ -30,17 +30,19 @@
             <div class="container-fluid header-content-small d-lg-none">
               <div class="row align-items-center justify-content-between">
                 <div class="col col-auto d-flex brand">
-                  <a title="Back to start page" href="/">
+                  <a title="Back to start page" href="#">
                     <img src="assets/media/pic/swiss.svg">
                   </a>
                   <h1>Online-Handbuch</h1>
                 </div>
                 <div class="col col-auto d-flex justify-content-end">
-                  <button type="button"></button>
+                    <button type="button" aria-expanded="false" aria-label="Toggle navigation" class="togglebutton btn">
+                        <span class="icon icon--menu" name="hamburger"></span>
+                    </button>
                 </div>
               </div>
             </div>
-            <div class="container header-content-large d-lg-flex">
+            <div class="container header-content-large d-none d-lg-flex">
               <div class="brand-container">
                 <div class="icon-container" style="border-right: 1px solid #e5e5e5; height: 48px; position: relative;">
                   <img class="logo-swiss" src="assets/media/pic/swiss.svg" tabindex="0" alt="Online-Handbuch Mediathek VBS">
@@ -61,7 +63,7 @@
               </div>
             </div>
           </div>
-        <div class="nav-container d-lg-flex">
+        <div class="nav-container d-lg-flex d-none">
             <div class="container nav-content">
               <div class="row align-items-center">
                 <div class="col">
@@ -90,14 +92,41 @@
               </div>
             </div>
           </div>
+                        
+            <!-- // Mobile Navigation !-->
+            
+            <div class="mobile-menu">
+                <div class="backdrop"></div>
+                <div class="mobile-nav">
+                    <div class="language-change">
+                        <button class="btn btn-tool selected">DE</button>
+                        <button class="btn btn-tool">FR</button>
+                        <button class="btn btn-tool">IT</button>
+                        <button class="btn btn-tool">EN</button>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="nav-links">
+                        <ul>
+                        <a href="#">Hallo</a>
+                        <a href="#">Velo</a>
+                            <ul class="inner-ul">
+                                <a href="#">Hie</a>
+                                <a href="#">Isch</a>
+                            </ul>
+                        <a href="#">Gido</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
         </nav>
   </header>
 
   <!-- MAIN !-->
     <main>
-        <div class="container function-container">
+        <div class="container function-container switch-cont">
             <div class="row width">
-                <div class="col">
+                <div class="col d-small-none">
                  <div class="breadcrumbs-container">
                      <a href="#" class="breadcrumbs">Funktion</a>
                      <a href="#" class="breadcrumbs">Suche</a>
@@ -111,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div class="container content-container">
+        <div class="container content-container switch-cont">
             <div class="row">
                 <div class="col-12">
                     <h3 class="site-title">Übersicht</h3>
@@ -124,20 +153,20 @@
                 
             </div>
         </div>
-        <div class="container button-container">
+        <div class="container button-container switch-cont">
             <div class="row width">
                 <div class="col">
                     <div class="flex-start">
                         <a href="#" class="go-button btn">
                             <span class="icon icon--arrow-left" aria-hidden="true"></span>
-                            <span class="button-theme">Thematext</span>
+                            <span class="button-theme d-small-none">Thematext</span>
                         </a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="flex-end">
                         <a href="#" class="go-button btn">
-                            <span class="button-theme">Thematext</span>
+                            <span class="button-theme d-small-none">Thematext</span>
                             <span class="icon icon--arrow-right" aria-hidden="true"></span>
                         </a>
                     </div>
@@ -147,19 +176,19 @@
     </main>
     <footer class="footer">
         <nav class="navbar">
-            <div class="container-fluid sitemap" style="padding-left: 50px; padding-right: 50px;">
-                <div class="sitemap-group">
+            <div class="container-fluid sitemap">
+                <div class="sitemap-group margin-right">
                     <a href="#">ZEM</a>
                     <a href="#">Dienstleistungen und Preise</a>
                     <a href="#">Hilfe und Kontakt</a>
                 </div>
-                <div class="sitemap-group">
+                <div class="sitemap-group margin-left">
                     <a href="#">Barrierefreiheit</a>
                     <a href="#">Nutzungsbestimmungen</a>
                     <a href="#">Login Medienverwaltung</a>
                 </div>
             </div>
-            <div class="container-fluid imprint" style="padding-left: 50px; padding-right: 50px;">
+            <div class="container-fluid imprint">
                 <div class="copyright text-truncate">Eidgenössisches Departement für Verteidigung, Bevölkerungsschutz und Sport</div>
                 <div class="imprint-links text-truncate">
                     <a href="#">Rechtliches</a>
@@ -170,3 +199,4 @@
         </nav>
     </footer>
 </body>
+</html>
