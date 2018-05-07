@@ -1,0 +1,108 @@
+{# include the head #}
+{% include 'partials/head.html.twig' %}
+
+<body>
+    <!-- HEADER !-->
+    <header>
+        <nav class="navbar fixed-top">
+          <div class="header-container">
+            <div class="container-fluid header-content-small d-lg-none">
+              <div class="row align-items-center justify-content-between">
+                <div class="col col-auto d-flex brand">
+                  <a title="Back to start page" href="{{ base_url_absolute }}">
+                    <img src="{{ theme_url }}/assets/images/swiss.svg">
+                  </a>
+                  <h1>{{ "THEME_ZEMHANDBUCH.SITE_TITLE"|t }}</h1>
+                </div>
+                <div class="col col-auto d-flex justify-content-end">
+                    <button type="button" aria-expanded="false" aria-label="Toggle navigation" class="togglebutton btn">
+                        <span class="icon icon--menu" name="hamburger"></span>
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="container header-content-large d-none d-lg-flex">
+              <div class="brand-container">
+                <div class="icon-container" style="border-right: 1px solid #e5e5e5; height: 48px; position: relative;">
+                  <img class="logo-swiss" src="{{ theme_url }}/assets/images/swiss.svg" tabindex="0" alt="Online-Handbuch Mediathek VBS">
+                  <a class="logo-eidgenossenschaft" title="Back to start page" href="{{ base_url_absolute }}">
+                    <img src="{{ theme_url }}/assets/images/logo.svg" alt="Online-Handbuch Mediathek VBS">
+                  </a>
+                </div>
+                <div class="title-container">
+                  <div class="title">{{ "THEME_ZEMHANDBUCH.SITE_TITLE"|t }}</div>
+                  <div class="subtitle">{{ "THEME_ZEMHANDBUCH.SITE_SUBTITLE"|t }}</div>
+                </div>
+              </div>
+                {% block language %}
+                    {% include 'partials/langswitcher.html.twig' %}
+                {% endblock %}
+            </div>
+        </div>
+        <div class="nav-container d-lg-flex d-none">
+            <div class="container nav-content">
+              <div class="row align-items-center">
+                <div class="col">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        {% block navigation %}
+                            {% include 'partials/navigation.html.twig' %}
+                        {% endblock %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                                    
+            <!-- // Mobile Navigation !-->
+            
+            <div class="mobile-menu">
+                <div class="backdrop"></div>
+                <div class="mobile-nav">
+                    {% block mobilelang %}
+                        {% include 'partials/langswitcher.html.twig' %}
+                    {% endblock %}
+                    <div class="spacer"></div>
+                    <div class="nav-links">
+                        {% block mobilenav %}
+                            {% include 'partials/mobilenav.html.twig' %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </nav>
+  </header>
+
+  <!-- MAIN !-->
+    <main>
+        {% block content %}
+                    
+        {% endblock %}
+    </main>
+    <footer class="footer">
+        <nav class="navbar">
+            <div class="container-fluid sitemap">
+                <div class="sitemap-group margin-right">
+                    <a href="">{{ "THEME_ZEMHANDBUCH.ZEM"|t }}</a>
+                    <a href="">{{ "THEME_ZEMHANDBUCH.DIENST_PREIS"|t }}</a>
+                    <a href="">{{ "THEME_ZEMHANDBUCH.HILFE_KONTAKT"|t }}</a>
+                </div>
+                <div class="sitemap-group margin-left">
+                    <a href="">{{ "THEME_ZEMHANDBUCH.BARRIERE"|t }}</a>
+                    <a href="">{{ "THEME_ZEMHANDBUCH.NUTZUNG"|t }}</a>
+                    <a href="">{{ "THEME_ZEMHANDBUCH.LOGIN"|t }}</a>
+                </div>
+            </div>
+            <div class="container-fluid imprint">
+                <div class="copyright text-truncate">{{ "THEME_ZEMHANDBUCH.COPY"|t }}</div>
+                <div class="imprint-links text-truncate">
+                    <a href="">{{ "THEME_ZEMHANDBUCH.RECHT"|t }}</a>
+                    <a href="">{{ "THEME_ZEMHANDBUCH.IMPRESSUM"|t }}</a>
+                    <div class="version-info">Version 1</div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

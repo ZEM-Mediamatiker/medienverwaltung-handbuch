@@ -1,0 +1,11 @@
+<div class="col-sm-12 col-md-12 col-lg-6">
+    <div class="go-result">
+        <h4 class="result-title">{{ page.title }}</h4>
+        <p class="result-text">{{ page.summary }}</p>
+        <span class="result-update-text">{{ "THEME_ZEMHANDBUCH.SEARCH_RESULTS_EDITED"|t }} {{ page.date|date(config.system.pages.dataformt.short) }}</span>
+        <a class="result-page" href="{{ page.url }}">
+            <span class="result-page-text">{{ "THEME_ZEMHANDBUCH.SEARCH_RESULTS_BUTTON"|t }}</span>
+            <span class="icon icon--arrow-right"></span>
+        </a>
+    </div>
+</div>

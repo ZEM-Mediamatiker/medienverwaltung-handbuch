@@ -1,0 +1,30 @@
+{% extends 'partials/simplesearch_base.html.twig' %}
+
+{% block content %}
+    <div class="container function-container switch-cont">
+            <div class="row width-end">
+                <div class="col">
+                    <div class="sm-search-container">
+                        {% include 'partials/simplesearch_searchbox.html.twig' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container count-container switch-cont">
+            <div class="row width-start">
+                <div class="col">
+                    <div class="count-text-container">
+                        <h3 class="searchresult-title">{{ "THEME_ZEMHANDBUCH.SEARCH_RESULTS_TERM"|t }} "{{ query }}"</h3>
+                        <p class="searchresult-text"><b>{{ search_results.count }}</b> {{ "THEME_ZEMHANDBUCH.SEARCH_RESULTS_SUBTERM"|t }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container result-container switch-cont">
+            <div class="row row-eq-height">
+                {% for page in search_results %}
+                    {% include 'partials/simplesearch_item.html.twig' with {'page':page} %}
+                {% endfor %}
+            </div>
+        </div>
+{% endblock %}

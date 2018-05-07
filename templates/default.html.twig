@@ -1,0 +1,45 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <div class="container function-container switch-cont">
+        <div class="row width">
+            <div class="col d-small-none">
+             <div class="breadcrumbs-container">
+                 
+             </div>
+            </div>
+            <div class="col">
+             <div class="sm-search-container">
+                {% include 'partials/simplesearch_searchbox.html.twig' %}
+             </div>
+            </div>
+        </div>
+    </div>
+    <div class="container content-container switch-cont">
+            <div class="row">
+                <div class="col-12">
+                    {{ page.content }}
+                </div>
+            </div>
+    </div>
+    <div class="container button-container switch-cont">
+            <div class="row width">
+                <div class="col">
+                    <div class="flex-start">
+                        <a href="#" class="go-button btn">
+                            <span class="icon icon--arrow-left" aria-hidden="true"></span>
+                            <span class="button-theme d-small-none">{{ page.title }}</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flex-end">
+                        <a href="#" class="go-button btn">
+                            <span class="button-theme d-small-none">{{ page.title }}</span>
+                            <span class="icon icon--arrow-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

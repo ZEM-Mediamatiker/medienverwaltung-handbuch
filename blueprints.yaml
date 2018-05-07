@@ -1,0 +1,13 @@
+name: Handbuch Medienverwaltung VBS
+version: 1.0
+description: "Grav Theme für das Handbuch Medienverwaltung VBS"
+icon: book
+author:
+  name: Joel Lüthi
+  email: zem.medienagentur@vtg.admin.ch
+  url: https://www.zem.ch
+homepage: http://.ch
+keywords: minimalist, theme, modern, fast, responsive, html5, css3, zem, handbuch
+bugs: https://github.com/ZEM-Mediamatiker/medienverwaltung-handbuch
+license: CC-BY-3.0
+readme: https://github.com/ZEM-Mediamatiker/medienvewaltung-handbuch/README.md

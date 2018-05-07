@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+    {% include 'partials/metadata.html.twig' %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if header.robots %}
+    <meta name="robots" content="{{ header.robots }}">
+    {% endif %}
+    <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
+    <!-- CSS !-->
+    <link rel="stylesheet" href="{{ theme_url }}/assets/css/default.css">
+    <link rel="stylesheet" href="{{ theme_url }}/assets/css/bootstrap-grid.css">
+    <!-- FONTS !-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <!-- FAVICON !-->
+    <link href="{{ theme_url }}/assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!-- JS !-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="{{ theme_url }}/assets/js/bootstrap.js" type="text/javascript"></script>
+    <script src="{{ theme_url }}/assets/js/main.js" type="text/javascript"></script>
+    {% endblock head %}
+</head>

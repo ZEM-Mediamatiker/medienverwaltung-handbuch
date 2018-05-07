@@ -1,0 +1,20 @@
+{% block mobilenav %}
+    {% macro loop(page) %}
+        {% for p in page.children %}
+            {% if p.visible %}
+                    <a href="{{ p.url }}">
+                        {{ p.menu }}
+                    </a>
+                    {% if p.children.count > 0 %}
+                    <ul class="inner-ul">
+                        {{ _self.loop(p) }}
+                    </ul>
+                    {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endmacro %}
+{% endblock %}
+
+<ul class="nav-links-ul">
+    {{ _self.loop(pages) }}
+</ul>

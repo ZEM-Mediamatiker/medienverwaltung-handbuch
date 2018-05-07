@@ -1,0 +1,23 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <div class="container-fluid search">
+        <div class="search-container container switch-cont">
+            <div class="search-section">
+                <h2 class="info-title">{{ "THEME_ZEMHANDBUCH.HOME_TITLE"|t }}</h2>
+                <div class="info-text">{{ "THEME_ZEMHANDBUCH.HOME_INFO_TEXT"|t }}
+                </div>
+                <div class="wrapper">
+                    {% include 'partials/simplesearch_searchbox.html.twig' %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container faq-container switch-cont">
+        <div class="row">
+            <div class="col-12">
+                {{ page.content }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

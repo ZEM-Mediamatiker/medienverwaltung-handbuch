@@ -1,0 +1,30 @@
+{% block navigation %}
+    {% macro loop(page) %}
+        {% for p in page.children %}
+            {% if p.visible %}
+            {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
+                <div>
+                    {% if p.children.count > 0 %}
+                    <div class="dropdown">
+                        <a href="{{ p.url }}" class="btn btn-nav dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            {{ p.menu }}
+                            <span class="icon icon--bottom"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenulink" x-placement="bottom-start">
+                            {{ _self.loop(p) }}
+                        </div>
+                    </div>
+                    {% else %}
+                        <a href="{{ p.url }}" class="btn btn-nav" role="button">
+                            {{ p.menu }}
+                        </a>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endmacro %}
+{% endblock %} 
+
+<div class="topics" style="display: flex;">
+    {{ _self.loop(pages) }}
+</div>
