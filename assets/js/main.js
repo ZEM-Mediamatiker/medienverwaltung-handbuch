@@ -53,12 +53,6 @@ $(document).ready(function() {
         e.preventDefault();
     });
     
-    // ADDING AN SPAN WITH THE GREATER-ICON IF THERE ARE MORE THEN ONE BREDCRUMB ON A SITE
-    
-    if ($('.breadcrumbs-container > a').length >= 2) {
-        $('.breadcrumbs-container a:not(:last-child)').after('<span class="icon icon--greater before-crumbs"></span>');
-    }
-    
     // OPEN NAVIGATION WHEN CLICK ON THE MENU-BUTTON
     
     $('.togglebutton').click(function(){

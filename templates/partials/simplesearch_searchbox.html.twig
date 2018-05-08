@@ -1,4 +1,4 @@
-<input class="search-field search-width"  placeholder="{{ "THEME_ZEMHANDBUCH.SEARCH_PLACEHOLDER"|t }}" aria-label="search" type="search" value="{{ query }}" data-search-input="{{ base_url }}{{ config.plugins.simplesearch.route}}/query">
+<input class="search-field search-width"  placeholder="{{ 'THEME_ZEMHANDBUCH.SEARCH_PLACEHOLDER'|t }}" type="search" value="{{ query }}" data-search-input="{{ base_url }}{{ config.plugins.simplesearch.route}}/query">
 <button class="btn btn-search" type="submit">{{ "THEME_ZEMHANDBUCH.SEARCH_BUTTON"|t }}</button>
 
 <script>
@@ -7,14 +7,14 @@ jQuery(document).ready(function($){
     var searchButton = $('.btn-search');
     
     input.on('keypress', function(event) {
-        if (event.which == 13 && input.val().lenght > 3) {
+        if (event.which == 13 || event.keyCode == 13 && input.val().lenght >= 3) {
             event.preventDefault();
             window.location.href = input.data('search-input') + '{{ config.system.param_sep }}' + input.val();
         }
     });
     
     searchButton.on('click', function(event) {
-        if (input.val().length > 3) {
+        if (input.val().length >= 3) {
             event.preventDefault();
             window.location.href = input.data('search-input') + '{{ config.system.param_sep }}' + input.val();
         }

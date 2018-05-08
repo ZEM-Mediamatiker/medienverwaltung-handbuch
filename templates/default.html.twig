@@ -4,9 +4,7 @@
     <div class="container function-container switch-cont">
         <div class="row width">
             <div class="col d-small-none">
-             <div class="breadcrumbs-container">
-                 
-             </div>
+                 {% include 'partials/breadcrumbs.html.twig' %}
             </div>
             <div class="col">
              <div class="sm-search-container">
@@ -22,23 +20,28 @@
                 </div>
             </div>
     </div>
+{% set progress = page.collection({'items':{'@taxonomy.category': 'backendanleitung'},'order': {'by': 'default', 'dir': 'asc'}}) %}
     <div class="container button-container switch-cont">
             <div class="row width">
-                <div class="col">
+                <div class="col-6">
+                    {% if not progress.isFirst(page.path) %}
                     <div class="flex-start">
-                        <a href="#" class="go-button btn">
+                        <a href="{{ progress.nextSibling(page.path).url }}" class="go-button btn">
                             <span class="icon icon--arrow-left" aria-hidden="true"></span>
-                            <span class="button-theme d-small-none">{{ page.title }}</span>
+                            <span class="button-theme d-small-none">{{ progress.nextSibling(page.path).title }}</span>
                         </a>
                     </div>
+                    {% endif %}
                 </div>
-                <div class="col">
+                <div class="col-6">
+                    {% if not progress.isLast(page.path) %}
                     <div class="flex-end">
-                        <a href="#" class="go-button btn">
-                            <span class="button-theme d-small-none">{{ page.title }}</span>
+                        <a href="{{ progress.prevSibling(page.path).url }}" class="go-button btn">
+                            <span class="button-theme d-small-none">{{ progress.prevSibling(page.path).title }}</span>
                             <span class="icon icon--arrow-right" aria-hidden="true"></span>
                         </a>
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>

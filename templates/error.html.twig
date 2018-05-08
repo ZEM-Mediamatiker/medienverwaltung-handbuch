@@ -76,9 +76,14 @@
 
   <!-- MAIN !-->
     <main>
-        {% block content %}
-                    
-        {% endblock %}
+        <div class="container switch-cont center">
+            <div class="error-container">
+                <img src="{{ theme_url }}/assets/images/gif_pulp_fiction.gif" alt="Pulp fiction gif" >
+            <h3>{{ "THEME_ZEMHANDBUCH.ERROR"|t }} {{ header.http_response_code }}</h3>
+            <h4>{{ "THEME_ZEMHANDBUCH.ERROR_NOT_FOUND"|t }}</h4>
+            <a href="{{ base_url_absolute }}">{{ "THEME_ZEMHANDBUCH.ERROR_BACK_TO_START"|t }}</a>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <nav class="navbar">
