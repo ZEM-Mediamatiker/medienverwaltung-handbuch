@@ -197,7 +197,7 @@ header {
     background-color: #d5d5d5;
 }
 
-.btn-tool {
+a.btn-tool {
     font-size: .875rem;
     text-align: center;
     font-weight: 700;
@@ -206,11 +206,11 @@ header {
     width: 32px;
     margin: 1px;
     padding: 0;
-    cursor: pointer;
     background: #fff;
+    color: #333!important;
 }
 
-.btn-tool:hover {
+a.btn-tool:hover {
     background-color: #d5d5d5;
 }
 

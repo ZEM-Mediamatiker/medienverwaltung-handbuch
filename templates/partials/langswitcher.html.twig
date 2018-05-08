@@ -1,4 +1,4 @@
-<div class="language-contianer language-change">
+<div class="language-contianer language-change" style="padding-top: 16px;">
     {% set langobj = grav['language'] %}
 
     {% for key in langswitcher.languages %}
@@ -11,9 +11,9 @@
             {% set active_class = '' %}
         {% endif %}
 
-        <button class="btn btn-tool{{ active_class }}" href="{{ lang_url ~ uri.params }}">
+        <a class="btn btn-tool{{ active_class }}" href="{{ lang_url ~ uri.params }}">
             {{  native_name(key)|capitalize }}
-        </button>
+        </a>
 
     {% endfor %}
 </div>
