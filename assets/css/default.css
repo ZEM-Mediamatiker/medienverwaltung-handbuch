@@ -68,6 +68,8 @@ main {
     margin-bottom: 48px;
 }
 
+/* ICONS */
+
 .icon {
     font-family: 'AdminCH_Symbols';
     font-weight: normal;
@@ -280,6 +282,8 @@ a.btn-tool:hover {
     background-color: #fff;
 }
 
+/* Dropdown menu */
+
 .dropdown {
     position: relative;
 }
@@ -341,9 +345,13 @@ a.btn-tool:hover {
     margin-top: -2px;
 }
 
+/* Main section */
+
 main {
     padding-top: 196px;
 }
+
+/* search field, container ... */
 
 .search {
     background-color: #069;
@@ -441,6 +449,8 @@ main {
     transition: .3s all ease;
 }
 
+/* FAQ section */
+
 .faq-container {
     padding-top: 48px;
     margin-bottom: 48px;
@@ -512,6 +522,8 @@ main {
 .home-title.no-margin {
     margin-top: 0rem;
 }
+
+/* footer styling */
 
 .footer {
     display: block;
@@ -601,7 +613,7 @@ main {
     margin-top: 48px;
 }
 
-/* UNTERSEITE */
+/* Single page styling */
 
 .function-container {
     padding-top: 16px;
@@ -615,6 +627,8 @@ main {
     -ms-flex-align: center;
     align-items: center;
 }
+
+/* small search */
 
 .sm-search-container {
     display: -webkit-box;
@@ -658,6 +672,8 @@ main {
 .sm-search-container .btn-search:hover {
     background: #004d73;
 }
+
+/* breadcrumbs styling */
 
 .breadcrumbs {
     font-size: .875rem;
@@ -790,6 +806,8 @@ h3{
     align-items: stretch;
 }
 
+/* result items styling */
+
 .go-result {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -902,6 +920,7 @@ video {
 }
 
 /* Error page */
+
 .center {
     display: flex;
     justify-content: center;
@@ -922,7 +941,6 @@ video {
     line-height: 2rem;
     margin: 0.5rem 0px;
 }
-/* Responsive CSS */
 
 .navbar .header-content-small {
     height: 54px;
@@ -993,6 +1011,8 @@ video {
     display: flex;
 }
 
+/* mobile menu in mobile state */
+
 .mobile-menu {
     display: none;
     position: fixed;
@@ -1014,6 +1034,8 @@ video {
     justify-content: space-between;
  /*   overflow: hidden; */
 }
+
+/* black background */
 
 .backdrop {
     background: rgba(0,0,0,.3);
@@ -1094,6 +1116,8 @@ video {
     margin-bottom: 4px;
     height: 44px;
 }
+
+/* MEDIA QUERIES */
 
 @media (min-width: 992px) {
     .d-lg-flex {

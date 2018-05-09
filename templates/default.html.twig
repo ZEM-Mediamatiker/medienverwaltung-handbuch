@@ -1,4 +1,8 @@
-{% extends 'partials/base.html.twig' %}
+{% extends 'partials/base.html.twig' %} 
+{# this file extends the base file #}
+
+
+{# following block gets included in the main section of the base file #}
 
 {% block content %}
     <div class="container function-container switch-cont">
@@ -16,14 +20,21 @@
     <div class="container content-container switch-cont">
             <div class="row">
                 <div class="col-12">
+                    {# Content from the page gets printed out #}
                     {{ page.content }}
                 </div>
             </div>
     </div>
+
+{# In admin give every site which needs the prev/next buttons the category backendanleitung #}
+
 {% set progress = page.collection({'items':{'@taxonomy.category': 'backendanleitung'},'order': {'by': 'default', 'dir': 'asc'}}) %}
     <div class="container button-container switch-cont">
             <div class="row width">
                 <div class="col-6">
+                    
+                    {# prev and next buttons are inverse in Grav CMS #}
+                    
                     {% if not progress.isFirst(page.path) %}
                     <div class="flex-start">
                         <a href="{{ progress.nextSibling(page.path).url }}" class="go-button btn">

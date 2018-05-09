@@ -1,4 +1,4 @@
-{# include the head #}
+{# include the head block form head file #}
 {% include 'partials/head.html.twig' %}
 
 <body>
@@ -12,7 +12,7 @@
                   <a title="Back to start page" href="{{ base_url_absolute }}">
                     <img src="{{ theme_url }}/assets/images/swiss.svg">
                   </a>
-                  <h1>{{ config.site.title }}</h1>
+                  <h1>{{ "THEME_ZEMHANDBUCH.SITE_TITLE"|t }}</h1>
                 </div>
                 <div class="col col-auto d-flex justify-content-end">
                     <button type="button" aria-expanded="false" aria-label="Toggle navigation" class="togglebutton btn">
@@ -30,8 +30,8 @@
                   </a>
                 </div>
                 <div class="title-container">
-                  <div class="title">Online-Handbuch</div>
-                  <div class="subtitle">Medienverwaltung Mediathek VBS</div>
+                  <div class="title">{{ "THEME_ZEMHANDBUCH.SITE_TITLE"|t }}</div>
+                  <div class="subtitle">{{ "THEME_ZEMHANDBUCH.SITE_SUBTITLE"|t }}</div>
                 </div>
               </div>
                 {% block language %}
@@ -79,7 +79,8 @@
         <div class="container switch-cont center">
             <div class="error-container">
                 <img src="{{ theme_url }}/assets/images/gif_pulp_fiction.gif" alt="Pulp fiction gif" >
-            <h3>{{ "THEME_ZEMHANDBUCH.ERROR"|t }} {{ header.http_response_code }}</h3>
+                <!-- Words from file -> languages.yaml !-->
+            <h3>{{ "THEME_ZEMHANDBUCH.ERROR"|t }} {{ header.http_response_code }}</h3> 
             <h4>{{ "THEME_ZEMHANDBUCH.ERROR_NOT_FOUND"|t }}</h4>
             <a href="{{ base_url_absolute }}">{{ "THEME_ZEMHANDBUCH.ERROR_BACK_TO_START"|t }}</a>
             </div>
@@ -89,22 +90,21 @@
         <nav class="navbar">
             <div class="container-fluid sitemap">
                 <div class="sitemap-group margin-right">
-                    <a href="">ZEM</a>
-                    <a href="">Dienstleistungen und Preise</a>
-                    <a href="">Hilfe und Kontakt</a>
+                    <!-- Words from file -> languages.yaml !-->
+                    <a href="">{{ "THEME_ZEMHANDBUCH.ZEM"|t }}</a>
+                    <a href="">{{ "THEME_ZEMHANDBUCH.HILFE_KONTAKT"|t }}</a>
                 </div>
                 <div class="sitemap-group margin-left">
-                    <a href="">Barrierefreiheit</a>
-                    <a href="">Nutzungsbestimmungen</a>
-                    <a href="">Login Medienverwaltung</a>
+                    <a href="">{{ "THEME_ZEMHANDBUCH.BARRIERE"|t }}</a>
+                    <a href="">{{ "THEME_ZEMHANDBUCH.NUTZUNG"|t }}</a>
                 </div>
             </div>
             <div class="container-fluid imprint">
-                <div class="copyright text-truncate">Eidgenössisches Departement für Verteidigung, Bevölkerungsschutz und Sport</div>
+                <div class="copyright text-truncate">{{ "THEME_ZEMHANDBUCH.COPY"|t }}</div>
                 <div class="imprint-links text-truncate">
-                    <a href="">Rechtliches</a>
-                    <a href="">Impressum</a>
-                    <div class="version-info">Version 1</div>
+                    <a href="">{{ "THEME_ZEMHANDBUCH.RECHT"|t }}</a>
+                    <a href="">{{ "THEME_ZEMHANDBUCH.IMPRESSUM"|t }}</a>
+                    <div class="version-info">Version 1.1</div>
                 </div>
             </div>
         </nav>

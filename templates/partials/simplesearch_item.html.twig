@@ -2,7 +2,14 @@
     <div class="go-result">
         <h4 class="result-title">{{ page.title }}</h4>
         <p class="result-text">{{ page.header.custom.summary|truncate(300) }}</p>
+            {# 
+            Custom field in the admin panel,
+            the summary only shows 300 caracters and ends with ...
+            #}
         <span class="result-update-text">{{ "THEME_ZEMHANDBUCH.SEARCH_RESULTS_EDITED"|t }} {{ page.date|date(config.system.pages.dataformt.short) }}</span>
+        
+        {# the releasedate gets printed out #}
+        
         <a class="result-page" href="{{ page.url }}">
             <span class="result-page-text">{{ "THEME_ZEMHANDBUCH.SEARCH_RESULTS_BUTTON"|t }}</span>
             <span class="icon icon--arrow-right"></span>

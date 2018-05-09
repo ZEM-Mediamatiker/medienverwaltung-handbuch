@@ -6,13 +6,14 @@ jQuery(document).ready(function($){
     var input = $('[data-search-input]');
     var searchButton = $('.btn-search');
     
+    // possible to search with pressing enter-key = 13
     input.on('keypress', function(event) {
         if (event.which == 13 || event.keyCode == 13 && input.val().lenght >= 3) {
             event.preventDefault();
             window.location.href = input.data('search-input') + '{{ config.system.param_sep }}' + input.val();
         }
     });
-    
+    // possible to search with pressing on the button right-hand side from the input field
     searchButton.on('click', function(event) {
         if (input.val().length >= 3) {
             event.preventDefault();
