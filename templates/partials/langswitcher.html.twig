@@ -19,7 +19,7 @@ The langswitcher plugin is needed
         {% endif %}
 
         <a class="btn btn-tool{{ active_class }}" href="{{ lang_url ~ uri.params }}">
-            {{  native_name(key)|capitalize }}
+            {{ key|upper }}
         </a>
 
     {% endfor %}
