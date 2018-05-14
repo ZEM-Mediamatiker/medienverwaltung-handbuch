@@ -100,7 +100,7 @@ main {
 /* Icon Accordion */
 
 .icon--root::after {
-    content: "";
+    content: "";
     width: 1.125rem;
     font-size: 1.25rem;
     color: #069;
@@ -204,10 +204,8 @@ a.btn-tool {
     text-align: center;
     font-weight: 700;
     border: none;
-    height: 32px;
-    width: 32px;
     margin: 1px;
-    padding: 0;
+    padding: 6px;
     background: #fff;
     color: #333!important;
 }
@@ -309,7 +307,7 @@ a.btn-tool:hover {
     top: 25px;
     left: 0px;
     will-change: transform;
-    background: #fff;
+    background: #f5f5f5;
 }
 
 .dropdown-menu a {
@@ -324,10 +322,6 @@ a.btn-tool:hover {
     font-size: .875rem;
     color: #757575;
     margin-bottom: 0px!important;
-}
-
-.dropdown-menu a:hover {
-    background: #f5f5f5;
 }
 
 .dropdown-menu.show {
@@ -914,6 +908,21 @@ img {
 }
 
 video {
+    -webkit-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
+    -moz-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
+    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
+    margin-bottom: -6px;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    color: #333;
+    background: #fff;
+    padding: 14px 24px;
+    font-size: .875rem;
     -webkit-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
     -moz-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
     box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);

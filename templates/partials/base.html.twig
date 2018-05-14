@@ -80,6 +80,8 @@
                     
         {% endblock %}
         {# In admin give every site which needs the prev/next buttons the category backendanleitung #}
+        
+{% if page in taxonomy.findTaxonomy({'category':'backendanleitung'}) %}
 
 {% set progress = page.collection({'items':{'@taxonomy.category': 'backendanleitung'},'order': {'by': 'default', 'dir': 'asc'}}) %}
     <div class="container button-container switch-cont">
@@ -109,6 +111,7 @@
                 </div>
             </div>
         </div>
+    {% endif %}
     </main>
     <footer class="footer">
         <nav class="navbar">
