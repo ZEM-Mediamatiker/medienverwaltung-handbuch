@@ -204,19 +204,18 @@ header {
     background-color: #d5d5d5;
 }
 
-a.btn-tool {
+.btn-tool {
     font-size: .875rem;
     text-align: center;
     font-weight: 600;
     border: none;
     margin: 1px;
-    padding: 6px;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    cursor: pointer;
     background: #fff;
     color: #333!important;
-}
-
-a.btn-tool:hover {
-    background-color: #d5d5d5;
 }
 
 .navbar .nav-container {

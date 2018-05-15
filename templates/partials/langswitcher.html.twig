@@ -18,8 +18,8 @@ The langswitcher plugin is needed
             {% set active_class = '' %}
         {% endif %}
 
-        <a class="btn btn-tool{{ active_class }}" href="{{ lang_url ~ uri.params }}">
+        <button onclick= "location.href = '{{ lang_url ~ uri.params }}';" class="btn btn-tool{{ active_class }}">
             {{ key|upper }}
-        </a>
+        </button>
     {% endfor %}
 </div>
