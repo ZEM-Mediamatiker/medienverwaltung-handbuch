@@ -195,6 +195,10 @@ header {
     margin-top: 16px;
 }
 
+.language-change {
+    padding-top: 16px;
+}
+
 .btn-tool.selected {
     background-color: #d5d5d5;
 }
@@ -928,6 +932,47 @@ figcaption {
     box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
 }
 
+/* Blockquote styles */
+
+blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child {
+    margin-bottom: 0;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote>p {
+    padding: 15px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: 10px solid;
+}
+
+blockquote>blockquote>blockquote>blockquote>blockquote>p {
+    color: #3c763d!important;
+    background-color: #dff0d8;
+    border-color: #5cb85c;
+}
+
+blockquote>blockquote>blockquote>blockquote>p {
+    color: #31708f!important;
+    background-color: #d9edf7;
+    border-color: #5bc0de;
+}
+
+blockquote>blockquote>blockquote>p {
+    color: #a94442!important;
+    background-color: #f2dede;
+    border-color: #d9534f;
+}
+
+blockquote>blockquote>p {
+    color: #8a6d3b!important;
+    background-color: #fcf8e3;
+    border-color: #f0ad4e;
+}
 /* Error page */
 
 .center {
@@ -1054,7 +1099,7 @@ figcaption {
 
 .mobile-nav {
     background: #fff;
-    min-width: 300px;
+    min-width: 330px;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1066,7 +1111,7 @@ figcaption {
     box-shadow: 0 8px 8px 0 rgba(0,0,0,.14), 0 0 8px 0 rgba(0,0,0,.12);
     border: 1px solid rgba(0,0,0,.2);
     padding: 20px 25px;
- /*   overflow-y: auto; */
+    overflow-y: auto;
 }
 
 .mobile-nav .language-change {
@@ -1076,6 +1121,11 @@ figcaption {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+}
+
+.mobile-nav .language-change {
+    padding-top: 16px;
+    margin-bottom: 56px;
 }
 
 .mobile-nav .language-change .btn-tool.selected {
@@ -1093,11 +1143,6 @@ figcaption {
     padding: 0;
     cursor: pointer;
     background: #fff;
-}
-
-.spacer {
-    border-top: 2px solid #979797;
-    margin: 27px -25px;
 }
 
 .nav-links ul{

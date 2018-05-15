@@ -5,7 +5,7 @@ The langswitcher plugin is needed
 
 #}
 
-<div class="language-contianer language-change" style="padding-top: 16px;">
+<div class="language-contianer language-change">
     {% set langobj = grav['language'] %}
 
     {% for key in langswitcher.languages %}
@@ -21,6 +21,5 @@ The langswitcher plugin is needed
         <a class="btn btn-tool{{ active_class }}" href="{{ lang_url ~ uri.params }}">
             {{ key|upper }}
         </a>
-
     {% endfor %}
 </div>
