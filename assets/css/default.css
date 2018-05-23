@@ -739,6 +739,18 @@ h6{
     font-weight: 300;
     color: #333;
     line-height: 2rem;
+    margin: 10px 0;
+}
+
+.content-container ol, .content-container ul {
+    margin: 0;
+}
+
+.content-container li {
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.75rem;
 }
 
 .button-container {
