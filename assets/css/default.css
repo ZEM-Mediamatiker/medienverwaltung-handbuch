@@ -51,7 +51,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 100%;
+    font-size: 1.125rem;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -718,7 +718,7 @@ h3{
 
 h4{
     font-size: 1.375rem;
-    font-weight: 600;
+    font-weight: 400;
     color: #000;
     line-height: 1.875rem;
     margin-bottom: 1rem;
@@ -727,7 +727,7 @@ h4{
 
 h5{
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 400;
     color: #000;
     line-height: 1.75rem;
     margin-bottom: 1rem;
@@ -736,7 +736,7 @@ h5{
 
 h6{
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 400;
     color: #000;
     line-height: 1.5rem;
     margin-bottom: 1rem;
@@ -956,9 +956,16 @@ a {
     text-decoration: none;
 }
 
-img {
+img.text-swiss {
+    height: 100%;
     vertical-align: middle;
     border-style: none;
+}
+
+.content-container img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
 }
 
 .embed-container {
@@ -1378,6 +1385,10 @@ blockquote>blockquote>p {
 
 @media (max-width: 575.98px) {
     
+    body {
+        font-size: 1rem;
+    }
+    
     .search {
         min-height: 295px;
     }
@@ -1401,12 +1412,6 @@ blockquote>blockquote>p {
         padding-top: 32px;
     }
     
-    h3 {
-        font-size: 1.375rem;
-        line-height: 2.25rem;
-        margin-bottom: 1.125rem;
-    }
-    
     .faq-container .faq-head {
         padding: 20px 10px;
     }
@@ -1416,11 +1421,42 @@ blockquote>blockquote>p {
         line-height: 1.75rem;
     }
     
+    .faq-content {
+        font-size: 1rem;
+        line-height: 1.625rem
+    }
+    
     .icon--root {
         margin-left: 24px;
     }
     
+    .page-title {
+        font-size: 1.875rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.625rem
+    }
+    
+    .home-title {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        margin-bottom: 1.125rem;
+    }
+    
+    h3 {
+       font-size: 1.5rem; 
+    }
+    
     .content-container p {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+    
+    .content-container li {
         font-size: 1rem;
         line-height: 1.75rem;
     }
