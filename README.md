@@ -1,6 +1,6 @@
-# Media management VBS/DDPS manual
+# Media management VBS/DDPS user guide
 
-This Grav CMS theme is used for the new user manual.
+This Grav CMS theme is used for the new user guide.
 
 ##### Plugins to install in order to use the theme:
 
