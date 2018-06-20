@@ -298,15 +298,15 @@ header {
     z-index: 1000;
     display: none;
     float: left;
-    min-width: 10rem;
+    min-width: 100%;
     padding: 0;
     margin: .125rem 0 0;
     font-size: 1rem;
     text-align: left;
     background-clip: padding-box;
-    -webkit-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.2);
-    -moz-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.2);
-    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    -moz-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
     position: absolute;
     -webkit-transform: translate3d(0px, 38px, 0px);
     transform: translate3d(0px, 38px, 0px);
@@ -371,7 +371,7 @@ main {
 .search-container .search-section {
     max-width: 80%;
     min-width: 80%;
-    padding: 40px 180px 40px 0px;
+    padding: 48px 180px 56px 0px;
 }
 
 .search-section .info-title {
@@ -414,9 +414,9 @@ main {
     margin-right: 16px;
     font-size: 1rem;
     border: none!important;
-    -webkit-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    -moz-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    -moz-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
 }
 
 .wrapper .search-width {
@@ -436,9 +436,9 @@ main {
     color: #069;
     cursor: pointer;
     background: #fff;
-    -webkit-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    -moz-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    -moz-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
 }
 
 .wrapper .btn-search:hover {
@@ -457,9 +457,6 @@ main {
 .faq-accordion {
     width: 100%;
     background: #fff;
-    -webkit-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    -moz-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
     border-radius: 3px;
     margin-bottom: 48px;
 }
@@ -561,6 +558,10 @@ main {
     flex-direction: column;
 }
 
+.sitemap-group a {
+    margin-bottom: 8px;
+}
+
 .footer .navbar a {
     color: #069;
 }
@@ -644,9 +645,9 @@ main {
     margin-right: 16px;
     font-size: .875rem;
     border: none!important;
-    -webkit-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    -moz-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    -moz-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
     min-width: 230px;
     max-width: 230px;
 }
@@ -660,9 +661,9 @@ main {
     color: #fff;
     background: #069;
     cursor: pointer;
-    -webkit-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    -moz-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    -moz-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
 }
 
 .sm-search-container .btn-search:hover {
@@ -788,15 +789,16 @@ h6{
     color: #fff;
     background: #069;
     cursor: pointer;
-    -webkit-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    -moz-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    -moz-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    
 }
 
 .button-container a.go-button.btn:hover {
@@ -870,9 +872,9 @@ h6{
     justify-content: space-between;
     background: #fff;
     border-radius: 3px 3px 3px 3px;
-    -webkit-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    -moz-box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
-    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
+    -moz-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
+    box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
     margin-bottom: 48px;
     width: 100%;
 }
@@ -967,6 +969,9 @@ img.text-swiss {
     vertical-align: middle;
     border-style: none;
     width: 100%;
+    -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
+    -moz-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
+    box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
 }
 
 .embed-container {
@@ -998,10 +1003,10 @@ iframe {
 }
 
 figure {
-    margin: 0 0 48px 0;
-    -webkit-box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.10);
-    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.10);
+    margin: 16px 0 48px 0;
+    -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
+    -moz-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
+    box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
 }
 
 figcaption {
@@ -1019,10 +1024,14 @@ table {
     width: 100%;
     margin: 30px 0 30px 0;
     background-color: #fff;
+    font-size: 1rem;
+    -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
+    -moz-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
+    box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
 }
 
 table, td {
-    border: 1px solid #ccc;
+    border: 1px solid #a2a2a2;
 }
 
 thead {
@@ -1039,8 +1048,8 @@ tr {
 
 th {
     font-weight: 600;
-    color: #454545;
-    background: #f9f9f9;
+    color: #fff;
+    background: #454545;
     padding: 8px;
     text-align: left;
 }
