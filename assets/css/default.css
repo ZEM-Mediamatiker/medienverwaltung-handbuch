@@ -798,11 +798,10 @@ h6{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    
 }
 
-.button-container a.go-button.btn:hover {
-    background-color: #004d73;
+a.go-button.btn:hover {
+    background: #004d73;
     transition: .3s all ease;
 }
 
