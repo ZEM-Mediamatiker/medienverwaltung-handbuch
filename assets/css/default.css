@@ -449,7 +449,7 @@ main {
 
 /* FAQ section */
 
-.faq-container {
+/*.faq-container {
     padding-top: 48px;
     margin-bottom: 24px;
 }
@@ -505,7 +505,7 @@ main {
     border-radius: 0px 0px 3px 3px;
 }
 
-/*.faq-container .home-title {
+.faq-container .home-title {
     font-size: 1.625rem;
     font-weight: 600;
     color: #333;
@@ -513,10 +513,6 @@ main {
     margin-bottom: 1.75rem;
     margin-top: 0px;
 }*/
-
-.home-title.no-margin {
-    margin-top: 0rem;
-}
 
 /* footer styling */
 
