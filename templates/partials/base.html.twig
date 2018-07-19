@@ -74,7 +74,7 @@
   </header>
 
   <!-- MAIN !-->
-    <main>
+    <div id="main">
         {% block content %}
                     
         {% endblock %}
@@ -111,24 +111,24 @@
             </div>
         </div>
     {% endif %}
-    </main>
+    </div>
     <footer class="footer">
         <nav class="navbar">
             <div class="container-fluid sitemap">
                 <div class="sitemap-group margin-right">
-                    <a href="">{{ "THEME_ZEMHANDBUCH.ZEM"|t }}</a>
-                    <a href="">{{ "THEME_ZEMHANDBUCH.HILFE_KONTAKT"|t }}</a>
+                    <a href="http://localhost/grav-handbuch/{{ html_lang }}/zem">{{ "THEME_ZEMHANDBUCH.ZEM"|t }}</a>
+                    <a href="http://localhost/grav-handbuch/{{ html_lang }}/help">{{ "THEME_ZEMHANDBUCH.HILFE_KONTAKT"|t }}</a>
                 </div>
                 <div class="sitemap-group margin-left">
-                    <a href="">{{ "THEME_ZEMHANDBUCH.BARRIERE"|t }}</a>
-                    <a href="">{{ "THEME_ZEMHANDBUCH.NUTZUNG"|t }}</a>
+                    <a href="http://localhost/grav-handbuch/{{ html_lang }}/accessibility">{{ "THEME_ZEMHANDBUCH.BARRIERE"|t }}</a>
+                    <a href="https://www.mv.admin.ch/login">{{ "THEME_ZEMHANDBUCH.VERWALTUNG"|t }}</a>
                 </div>
             </div>
             <div class="container-fluid imprint">
                 <div class="copyright text-truncate">{{ "THEME_ZEMHANDBUCH.COPY"|t }}</div>
                 <div class="imprint-links text-truncate">
-                    <a href="">{{ "THEME_ZEMHANDBUCH.RECHT"|t }}</a>
-                    <a href="">{{ "THEME_ZEMHANDBUCH.IMPRESSUM"|t }}</a>
+                    <a href="http://localhost/grav-handbuch/{{ html_lang }}/right">{{ "THEME_ZEMHANDBUCH.RECHT"|t }}</a>
+                    <a href="http://localhost/grav-handbuch/{{ html_lang }}/imprint">{{ "THEME_ZEMHANDBUCH.IMPRESSUM"|t }}</a>
                     <div class="version-info">Version 1.1</div>
                 </div>
             </div>

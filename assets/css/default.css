@@ -66,7 +66,8 @@ body {
     box-sizing: border-box;
 }
 
-main {
+#main {
+    padding-top: 196px;
     margin-bottom: 48px;
 }
 
@@ -345,22 +346,12 @@ header {
     margin-top: -2px;
 }
 
-/* Main section */
-
-main {
-    padding-top: 196px;
-}
-
 /* search field, container ... */
 
 .search {
     background-color: #069;
     min-height: 445px;
     padding: 0;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-box-pack: justify;
-    justify-content: center;
 }
 
 .search-container {
@@ -434,6 +425,7 @@ main {
     border-radius: 3px;
     font-weight: 600;
     color: #069;
+    line-height: normal;
     cursor: pointer;
     background: #fff;
     -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
@@ -449,7 +441,7 @@ main {
 
 /* FAQ section */
 
-/*.faq-container {
+.faq-container {
     padding-top: 48px;
     margin-bottom: 24px;
 }
@@ -504,7 +496,7 @@ main {
     border-bottom: 3px solid #069;
     border-radius: 0px 0px 3px 3px;
 }
-
+/*
 .faq-container .home-title {
     font-size: 1.625rem;
     font-weight: 600;
@@ -1348,7 +1340,7 @@ blockquote>blockquote>p {
         display: none;
     }
     
-    main {
+    #main {
         padding-top: 58px;
     }
     
