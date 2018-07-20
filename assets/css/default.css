@@ -73,7 +73,84 @@ body {
 
 /* ICONS */
 
-.icon {
+.fa-bars {
+    font-size: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.fa-angle-right {
+    color: #757575;
+    font-size: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.fa-arrow-right , .fa-arrow-left {
+    font-size: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.fa-caret-down {
+    font-size: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.faq-accordion .fa-caret-down {
+    font-size: 24px;
+    height: 24px;
+    vertical-align: middle;
+    color: #069;
+    padding: 0px;
+    margin: 0px;
+}
+
+.fa-file-download {
+    font-size: 24px;
+    height: 24px;
+    vertical-align: middle;
+    color: #454545;
+}
+
+/* DOWNLOAD */
+
+.document-link {
+    display: flex;
+    max-width: 400px;
+    padding: 16px 24px;
+    background: #d5d5d5;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    -moz-box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.03);
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.document-link:hover {
+    transition: all .3s ease;
+    background: #069;
+}
+
+.document-link:hover .document-name{
+    color: #fff;
+}
+
+.document-link:hover .fa-file-download{
+    color: #fff;
+}
+
+.document-name {
+    font-size: 1.125rem;
+    color: #454545;
+    margin-left: 24px;
+    font-weight: 600;
+}
+
+ /* .icon {
     font-family: 'AdminCH_Symbols';
     font-weight: normal;
     z-index: 50;
@@ -102,7 +179,7 @@ body {
     margin: 0px 4px;
 }
 
-/* Icon Accordion */
+
 
 .icon--root::after {
     content: "";
@@ -110,6 +187,15 @@ body {
     font-size: 1.25rem;
     color: #069;
 }
+
+
+
+.icon--pdf::after {
+    content: "";
+    width: 1.75rem;
+    font-size: 1.75rem;
+    color: #069;
+} */
 
 /* MAIN CSS */
 
@@ -738,7 +824,6 @@ h6{
     font-weight: 300;
     color: #333;
     line-height: 2rem;
-    margin: 10px 0;
 }
 
 .content-container ol, .content-container ul {
@@ -785,6 +870,7 @@ h6{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    align-items: center;
 }
 
 .go-button .btn:hover {
@@ -915,6 +1001,7 @@ h6{
     -ms-flex-pack: justify;
     justify-content: space-between;
     cursor: pointer;
+    align-items: center;
 }
 
 .result-page:hover {
@@ -1545,5 +1632,15 @@ blockquote>blockquote>p {
     
     .imprint-links {
         margin-top: .5rem;
+    }
+    .document-link {
+        max-width: 100%;
+    }
+    .document-name {
+        font-size: 1rem;
+    }
+    .fa-file-download {
+    font-size: 20px;
+    height: 20px;
     }
 }

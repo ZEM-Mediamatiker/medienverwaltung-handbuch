@@ -14,7 +14,7 @@
             {% else  %}
                 <span itemprop="title" class="breadcrumbs">{{ crumb.menu }}</span>
             {% endif %}
-            <span class="{{ divider }}"></span>
+            <i class="{{ divider }}"></i>
         {% else %}
             {% if breadcrumbs_config.link_trailing %}
                 <a href="{{ crumb.url }}" itemprop="url" class="breadcrumbs"><span itemprop="title">{{ crumb.menu }}</span></a>
