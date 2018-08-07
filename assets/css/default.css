@@ -481,7 +481,7 @@ header {
 /* ACCORDION */
 
 .accordion-wrapper {
-  margin: 30px 0;
+  margin: 30px 0px 0px 0px;
   text-align: left; 
     -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.08), 0 1px 3px rgba(0,0,0,.05);
     -moz-box-shadow: 0 4px 6px rgba(50,50,93,.08), 0 1px 3px rgba(0,0,0,.05);
@@ -560,10 +560,13 @@ header {
     border-bottom: 3px solid #f9f9f9;
 }
 
+
+
 .faq-container {
-    padding-top: 48px;
-    margin-bottom: 24px;
+    padding-top: 40px;
+    margin-bottom: 48px;
 }
+/*
 
 .faq-accordion {
     width: 100%;
@@ -615,7 +618,7 @@ header {
     border-bottom: 3px solid #069;
     border-radius: 0px 0px 3px 3px;
 }
-/*
+
 .faq-container .home-title {
     font-size: 1.625rem;
     font-weight: 600;
@@ -848,7 +851,7 @@ h6{
     font-weight: 600;
     color: #000;
     line-height: 2rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0.875rem;
     margin-top: 0rem;
 }
 
@@ -857,6 +860,7 @@ h6{
     font-weight: 300;
     color: #333;
     line-height: 2rem;
+    margin: 16px 0px;
 }
 
 .content-container ol, .content-container ul {
@@ -870,8 +874,8 @@ h6{
     line-height: 1.75rem;
 }
 
-.button-container {
-    padding-top: 2rem;
+.content-container {
+    margin-bottom: 24px;
 }
 
 .flex-end {
@@ -1124,14 +1128,14 @@ video {
 }
 
 .video-container {
-    margin: 16px 0 48px 0;
+    margin: 16px 0 24px 0;
 	-webkit-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
 	-moz-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
 	box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
 }
 
 figure {
-    margin: 16px 0 48px 0;
+    margin: 16px 0 24px 0;
     -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
     -moz-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
     box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
@@ -1158,7 +1162,7 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
     width: 100%;
-    margin: 30px 0 30px 0;
+    margin: 16px 0 24px 0;
     background-color: #fff;
     font-size: 1rem;
     -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.04);
@@ -1238,6 +1242,8 @@ blockquote>blockquote>p {
     background-color: #fcf8e3;
     border-color: #f0ad4e;
 }
+
+
 /* Error page */
 
 .center {
@@ -1568,24 +1574,6 @@ blockquote>blockquote>p {
         padding-top: 32px;
     }
     
-    .faq-container .faq-head {
-        padding: 20px 10px;
-    }
-    
-    .faq-container .faq-title {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-    }
-    
-    .faq-content {
-        font-size: 1rem;
-        line-height: 1.625rem
-    }
-    
-    .icon--root {
-        margin-left: 24px;
-    }
-    
     .page-title {
         font-size: 1.875rem;
         line-height: 2rem;
@@ -1605,6 +1593,10 @@ blockquote>blockquote>p {
     
     h3 {
        font-size: 1.5rem; 
+    }
+    
+    .content-container {
+        margin-bottom: 8px;
     }
     
     .content-container p {
